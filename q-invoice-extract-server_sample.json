@@ -1,0 +1,19 @@
+{
+  "description": "Sample invoice texts for local testing. The grader uses DIFFERENT hidden invoices.",
+  "output_schema": {
+    "invoice_no": "string (null if not found)",
+    "date": "string YYYY-MM-DD (null if not found)",
+    "vendor": "string (null if not found)",
+    "amount": "number — subtotal before tax (null if not found)",
+    "tax": "number — tax amount (null if not found)",
+    "currency": "string e.g. INR, USD (null if not found)"
+  },
+  "samples": [
+    {
+      "invoice_text": "INVOICE\nInvoice No: INV-2026-0041\nDate: 15 March 2026\nVendor: TechParts Pvt Ltd\nBill To: IITM Procurement Dept\n\nItems:\n  USB-C Hub (x2) ............. Rs. 1,299.00\n  HDMI Cable (x3) ............. Rs.   450.00\n                                ----------\n  Subtotal ...................  Rs. 2,199.00\n  GST (18%) ..................  Rs.   395.82\n                                ----------\n  TOTAL ......................  Rs. 2,594.82\nCurrency: INR"
+    },
+    {
+      "invoice_text": "COMMERCIAL INVOICE\nInvoice #: 2026-MKT-009\nDate: April 3, 2026\nSeller: Bright Displays Ltd\n\nDescription: LED Monitor 27\" (qty 5) @ USD 320 each\nSubtotal: USD 1,600.00\nVAT (10%): USD 160.00\nGrand Total: USD 1,760.00"
+    }
+  ]
+}
